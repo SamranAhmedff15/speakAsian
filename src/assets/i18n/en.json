@@ -1,0 +1,98 @@
+{
+    "Logo": {
+        "Name": "Speak Asian"
+    },
+    "Navigation": {
+        "SignIn": "Sign In",
+        "Languages": "Languages"
+    },
+    "Masthead": {
+        "Journey": "Join us to learn japanese. Your journey starts here"
+    },
+    "Titles": {
+        "Teachers": "Skilled teachers",
+        "Learning": "Advanced learning",
+        "Courses": "Certified courses"
+    },
+    "IconsGrid": {
+        "TeachersDesc": "Our teachers are fully devoted to help you !",
+        "LearningDesc": "We use many tools and apps to give you the best learning experience !",
+        "CoursesDesc": "Our courses are certified by the Japanese embassy in Morocco!"
+    },
+    "ImageShowcases": {
+        "Teachers": "Teachers with many years of teaching experience ,translation or interpretation of the Japanese language, at your service to guide you throughout your learning journey !",
+        "Learning": "We provide you with Improved and advanced teaching techniques along with practical tools to make your learning fun,efficient and fast ! ",
+        "Courses": "Our Japanese courses are certified by the Japanese embassy in Morocco and on top of that you receive a certification and you can also register for the JLPT examamination to get an international certification !"
+    },
+    "Testimonials": {
+        "AboutUs": "What our students say about us...",
+        "First": "I have always dreamed of learning japanese, and thanks to you my dream is becoming a reality",
+        "Second": "Thanks to the amazing staff my Japanese has improved a lot !",
+        "Third": "Japanese is a very difficult language but thanks to speak asian, I have started to understand a lot of phrases and I became able to chat with Japanese people !"
+    },
+    "CallToAction": {
+        "Ready": "Ready to get started? Sign up now!",
+        "SignUp": "Sign up"
+    },
+    "Footer": {
+        "CopyRights": "All Rights Reserved."
+    },
+    "SignIn": {
+        "Mail": "E-mail",
+        "Pass": "Password",
+        "Signin": "Sign in"
+    },
+    "SignUp": {
+        "Signup": "Sign up",
+        "FirstName": "First name",
+        "LastName": "Last name",
+        "Sex": "Sex",
+        "Gender": [
+            {
+                "Male": "Male"
+            },
+            {
+                "Female": "Female"
+            }
+        ],
+        "Level": "Level",
+        "Select": "Select",
+        "ClassLevel": [
+            {
+                "BeginnerOne": "Beginner 1"
+            },
+            {
+                "BeginnerTwo": "Beginner 2"
+            },
+            {
+                "IntermediateOne": "Intermediate 1"
+            },
+            {
+                "IntermediateTwo": "Intermediate 2"
+            },
+            {
+                "Advanced": "Advanced"
+            }
+        ],
+        "LevelDetails": [
+            {
+                "BeginnerOne": "Lesson 1 to 12 of the book 'Minna no nihongo'.\nIntroduction to writing systems, learning to introduce oneself and introducing someone else and being able to engage in simple daily conversations"
+            },
+            {
+                "BeginnerTwo": "Lesson 13 to 25 of the book 'Minna no nihongo'.\nAfter completing 25 lessons you will be eligible to pass the N5 level of 'JLPT' International Japanese Language Certification"
+            },
+            {
+                "IntermediateOne": "Lesson 26 to 33 of the book 'Minna no nihongo'.\nIntermediate level students will aim to pass Level N5 of the JLPT level sufficient to master everyday conversations and read fairly simple sentences"
+            },
+            {
+                "IntermediateTwo": "Lesson 34 to 50 of the book 'Minna no nihongo'.\n By completing 50 lessons you will be eligible to pass the N4 in all fluency but this requires extra work at home in addition to weekly classes"
+            },
+            {
+                "Advanced": "This level is intended for people who already have a solid foundation of grammar, Vocabulary and Kanji that corresponds to JLPT N3 level. The course is focused on communication in the first place and then the preparation of the JLPT"
+            }
+        ],
+        "BirthDate": "Birth Date",
+        "Phone": "Phone number",
+        "SchoolLevel": "School level"
+    }
+}

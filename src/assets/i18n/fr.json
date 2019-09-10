@@ -1,0 +1,98 @@
+{
+    "Logo": {
+        "Name": "Speak Asian"
+    },
+    "Navigation": {
+        "SignIn": "Se connecter",
+        "Languages": "Langues"
+    },
+    "Masthead": {
+        "Journey": "Rejoignez-nous pour apprendre le japonais. Votre voyage commence ici"
+    },
+    "Titles": {
+        "Teachers": "Des enseignants qualifiés",
+        "Learning": "Apprentissage avancé",
+        "Courses": "Cours certifiés"
+    },
+    "IconsGrid": {
+        "TeachersDesc": "Nos professeurs sont entièrement dévoués à vous aider!",
+        "LearningDesc": "Nous utilisons de nombreux outils et applications pour vous offrir la meilleure expérience d’apprentissage!",
+        "CoursesDesc": "Nos cours sont certifiés par l'ambassade du Japon au Maroc!"
+    },
+    "ImageShowcases": {
+        "Teachers": "Des professeurs avec de nombreuses années d’expérience dans l’enseignement, la traduction ou l’interprétation de la langue japonaise, à votre service pour vous guider tout au long de votre parcours d’apprentissage!",
+        "Learning": "Nous vous fournissons des techniques d'enseignement améliorées et avancées ainsi que des outils pratiques pour rendre votre apprentissage amusant, efficace et rapide!",
+        "Courses": "Nos cours de japonais sont certifiés par l'ambassade du Japon au Maroc. En plus de cela, vous recevez une certification et vous pouvez également vous inscrire à l'examen JLPT pour obtenir une certification internationale!"
+    },
+    "Testimonials": {
+        "AboutUs": "Ce que nos étudiants disent de nous ...",
+        "First": "J'ai toujours rêvé d'apprendre le japonais et grâce à vous mon rêve devient réalité",
+        "Second": "Grâce au personnel exceptionnel, mon japonais s'est beaucoup amélioré!",
+        "Third": "Le japonais est une langue très difficile mais grâce à parler asiatique, j'ai commencé à comprendre beaucoup de phrases et je suis devenu capable de discuter avec des japonais!"
+    },
+    "CallToAction": {
+        "Ready": "Prêt à commencer? S'inscrire maintenant!",
+        "SignUp": "S'inscrire"
+    },
+    "Footer": {
+        "CopyRights": "Tous les droits sont réservés."
+    },
+    "SignIn": {
+        "Mail": "E-mail",
+        "Pass": "Mot de passe",
+        "Signin": "Se connecter"
+    },
+    "SignUp": {
+        "Signup": "S'inscrire",
+        "FirstName": "Prénom",
+        "LastName": "Nom",
+        "Sex": "Sexe",
+        "Gender": [
+            {
+                "Male": "Homme"
+            },
+            {
+                "Female": "Femme"
+            }
+        ],
+        "Level": "Niveau",
+        "ClassLevel": [
+            {
+                "BeginnerOne": "Débutant 1"
+            },
+            {
+                "BeginnerTwo": "Débutant 2"
+            },
+            {
+                "IntermediateOne": "Intermédiaire 1"
+            },
+            {
+                "IntermediateTwo": "Intermédiaire 2"
+            },
+            {
+                "Advanced": "Avancé"
+            }
+        ],
+        "LevelDetails": [
+            {
+                "BeginnerOne": "Leçon 1 à 12 du livre 'Minna no nihongo'.\nInitiation aux systèmes d'écriture, apprendre à se présenter et à présenter quelqu'un d'autre et pouvoir s'engager dans des conversations journalieres simples"
+            },
+            {
+                "BeginnerTwo": "Leçon 13 jusqu'à 25 du livre 'Minna no nihongo'.\nAprès avoir terminé 25 leçons vous serez éligible à passer le niveau N5 de 'JLPT' certification international de langue japonaise"
+            },
+            {
+                "IntermediateOne": "Leçon 26 jusqu'à 33 du livre 'Minna no nihongo'\nLes étudiants du niveau intermédiaire auront pour but de passer le Niveau N5 du JLPT niveau suffisant pour maîtriser les conversations de tous les jours et la lecture de phrases assez simples"
+            },
+            {
+                "IntermediateTwo": "Leçon 34 jusqu'à 50 du livre 'Minna no nihongo'.\nEn terminant 50 leçons vous serez éligible à passer le N4 en toute aisance mais ceci nécessite un travail supplémentaire à la maison en plus des cours hebdomadaires"
+            },
+            {
+                "Advanced": "Ce niveau est destiné pourles personnes ayant déjà une base solide de grammaire, Vocabulaire et Kanji qui correspond au niveau JLPT N3. Le cours est focalisé sur la communication en 1er lieu et ensuite la préparation du JLPT"
+            }
+        ],
+        "Select": "Choisir",
+        "BirthDate": "Date de naissance",
+        "Phone": "Phone number",
+        "SchoolLevel": "Niveau scolaire"
+    }
+}

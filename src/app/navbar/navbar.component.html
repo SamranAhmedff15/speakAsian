@@ -1,0 +1,17 @@
+ <!-- Navigation -->
+<div class="body">
+<nav class="navbar navbar-light bg-light static-top">
+    <div class="container">
+        <a class="navbar-brand logo" href="#" routerLink="/">
+            {{'Logo.Name' | translate}}
+        </a>
+        <label>
+            <select class="custom-select my-1 mr-sm-2" #langselect (change)="translate.use(langselect.value)">
+                <option *ngFor="let lang of translate.getLangs()" [value]="lang">
+                    {{ lang }}
+                </option>
+            </select>
+        </label>
+    </div>
+</nav>
+</div>

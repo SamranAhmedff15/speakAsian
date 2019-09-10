@@ -1,0 +1,199 @@
+<div class="body">
+    <nav class="navbar navbar-light bg-light static-top">
+        <div class="container">
+            <a class="navbar-brand logo" href="#" routerLink="/">
+                {{'Logo.Name' | translate}}
+            </a>
+            <button class="btn" href="#" routerLink="/Signin"> {{'Navigation.SignIn' | translate}}</button>
+
+            <label>
+                <select class="custom-select my-1 mr-sm-2" #langselect (change)="translate.use(langselect.value)">
+                    <option *ngFor="let lang of translate.getLangs()" [value]="lang">
+                        {{ lang }}
+                    </option>
+                </select>
+            </label>
+        </div>
+    </nav>
+    <!-- Masthead -->
+    <header class="masthead text-white text-center">
+        <div class="overlay"></div>
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-9 mx-auto">
+                    <h1 class="mb-5">{{'Masthead.Journey' | translate}}</h1>
+                </div>
+                <div class="col-md-10 col-lg-8 col-xl-12 ">
+                    <div class="row">
+                        <div class="col-12 col-md-3 mx-auto">
+                            <button class="btn btn-danger" href="#"
+                                routerLink="/Signup">{{'CallToAction.SignUp' | translate}}</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Icons Grid -->
+    <section class="features-icons bg-light text-center">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4">
+                    <div class="features-icons-item mx-auto mb-5 mb-lg-0 mb-lg-3">
+                        <div class="features-icons-icon d-flex">
+                            <fa-icon [icon]="faChalkboardTeacher" class="m-auto icon-class"></fa-icon>
+                        </div>
+                        <h3>{{'Titles.Teachers' | translate}}</h3>
+                        <p class="lead mb-0">{{'IconsGrid.TeachersDesc' | translate}}</p>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="features-icons-item mx-auto mb-5 mb-lg-0 mb-lg-3">
+                        <div class="features-icons-icon d-flex">
+                            <fa-icon [icon]="faRocket" class="m-auto icon-class"></fa-icon>
+                        </div>
+                        <h3>{{'Titles.Learning' | translate}}</h3>
+                        <p class="lead mb-0">{{'IconsGrid.LearningDesc' | translate}}</p>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="features-icons-item mx-auto mb-0 mb-lg-3">
+                        <div class="features-icons-icon d-flex">
+                            <fa-icon [icon]="faCertificate" class="m-auto icon-class"></fa-icon>
+                        </div>
+                        <h3>{{'Titles.Courses' | translate}}</h3>
+                        <p class="lead mb-0">{{'IconsGrid.CoursesDesc' | translate}}</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Image Showcases -->
+    <section class="showcase">
+        <div class="container-fluid p-0">
+            <div class="row no-gutters">
+
+                <div class="col-lg-6 order-lg-2 text-white showcase-img"
+                    style="background-image: url('../assets/img/teachers.jpg');"></div>
+                <div class="col-lg-6 order-lg-1 my-auto showcase-text">
+                    <h2>{{'Titles.Teachers' | translate}}</h2>
+                    <p class="lead mb-0">
+                        {{'ImageShowcases.Teachers' | translate}}
+                    </p>
+                </div>
+            </div>
+            <div class="row no-gutters">
+                <div class="col-lg-6 text-white showcase-img"
+                    style="background-image: url('../assets/img/jp_material.jpg');">
+                </div>
+                <div class="col-lg-6 my-auto showcase-text">
+                    <h2>{{'Titles.Learning' | translate}}</h2>
+                    <p class="lead mb-0">
+                        {{'ImageShowcases.Learning' | translate}}
+                    </p>
+                </div>
+            </div>
+            <div class="row no-gutters">
+                <div class="col-lg-6 order-lg-2 text-white showcase-img"
+                    style="background-image: url('../assets/img/JLPT-logo.png');"></div>
+                <div class="col-lg-6 order-lg-1 my-auto showcase-text">
+                    <h2>{{'Titles.Courses' | translate}}</h2>
+                    <p class="lead mb-0">
+                        {{'ImageShowcases.Courses' | translate}}
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="testimonials text-center bg-light">
+        <div class="container">
+            <h2 class="mb-5">{{'Testimonials.AboutUs' | translate}}</h2>
+            <div class="row">
+                <div class="col-lg-4">
+                    <div class="testimonial-item mx-auto mb-5 mb-lg-0">
+                        <img class="img-fluid rounded-circle mb-3" src="../assets/img/jhon.jpg" alt="">
+                        <h5>Ahmed S.</h5>
+                        <p class="font-weight-light mb-0">{{'Testimonials.First' | translate}}</p>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="testimonial-item mx-auto mb-5 mb-lg-0">
+                        <img class="img-fluid rounded-circle mb-3" src="../assets/img/jhon.jpg" alt="">
+                        <h5>Rachid K.</h5>
+                        <p class="font-weight-light mb-0">
+                            {{'Testimonials.Second' | translate }}
+                        </p>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="testimonial-item mx-auto mb-5 mb-lg-0">
+                        <img class="img-fluid rounded-circle mb-3" src="../assets/img/jhon.jpg" alt="">
+                        <h5>Ismail </h5>
+                        <p class="font-weight-light mb-0">{{'Testimonials.Third' | translate}}</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Call to Action -->
+    <section class="call-to-action text-white text-center">
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-9 mx-auto">
+                    <h2 class="mb-4">{{'CallToAction.Ready' | translate}}</h2>
+                </div>
+                <div class="col-md-10 col-lg-8 col-xl-7 mx-auto">
+                    <form>
+                        <div class="form-row">
+                            <div class="col-md-10 col-lg-8 col-xl-12 ">
+                                <div class="row">
+                                    <div class="col-12 col-md-3 mx-auto">
+                                        <button class="btn" href="#"
+                                            routerLink="/Signup">{{'CallToAction.SignUp' | translate}}
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer bg-light">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 h-100 text-center text-lg-left my-auto">
+                    <h5 class="text-muted mb-4 mb-lg-0">&copy; Speak Asian 2019. {{'Footer.CopyRights' | translate}}
+                    </h5>
+                </div>
+                <div class="col-lg-6 h-100 text-center text-lg-right my-auto">
+                    <ul class="list-inline mb-0">
+                        <li class="list-inline-item mr-3">
+                            <a href="https://www.facebook.com/speakasianlc/">
+                                <fa name="facebook" class="social icon-class"></fa>
+                            </a>
+                        </li>
+                        <li class="list-inline-item mr-3">
+                            <a href="https://twitter.com/asia_speak">
+                                <fa name="twitter" class="social icon-class"></fa>
+                            </a>
+                        </li>
+                        <li class="list-inline-item">
+                            <a href="#">
+                                <fa name="instagram" class="social icon-class"></fa>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+</div>

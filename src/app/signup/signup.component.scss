@@ -1,0 +1,65 @@
+@import "../landing-page/landing-page.component.scss";
+@import url("https://fonts.googleapis.com/css?family=Crimson+Pro&display=swap");
+
+@media (max-width: 992px) and (min-width:768px){
+  .card{
+    width: 300px;
+    position: relative;
+    text-align: center;
+    margin: 0;
+  }
+}
+
+.form {
+  color: #fff;
+  font-size: 24.54px;
+}
+.form-control {
+  background-color: #fff;
+  color: #bc002d;
+  font-weight: 500;
+  font-size: 18px;
+  font-family: "Crimson Pro", serif;
+}
+.card .card-footer{
+  
+  background-color: white;
+  &:hover {
+    background-color: darken($color: #fff, $amount: 5%);
+    cursor: auto;
+  }
+  .card-footer{
+    background-color: white;
+  }
+}
+
+.card{
+  margin-right: 15px;
+  margin-left: 15px;
+}
+
+.card-body {
+  padding-top: 10px;
+  padding-bottom: 5px;
+  padding-left: 0px;
+  padding-right: 0px;
+  .card-title {
+    font-size: 1.23rem;
+    color: #bc002d;
+  }
+  .card-text {
+    color: rgb(143, 141, 141);
+    font-size: 15px;
+    font-weight: bold;
+    text-align: left;
+    margin-bottom: 3px;
+    padding-bottom: 3px;
+    min-height: 250px;
+  }
+
+  .btn {
+    color: white;
+    border: none;
+  }
+}
+

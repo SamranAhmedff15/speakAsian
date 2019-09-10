@@ -1,0 +1,133 @@
+<header class="masthead">
+    <div class="container">
+        <form class="form text-center">
+            <div class="form-row">
+                <div class="col-md-3 mb-3">
+                    <label for="mail">{{'SignIn.Mail' | translate}}</label>
+                    <input type="mail" class="form-control" id="mail" required>
+                </div>
+                <div class="col-md-3 mb-3">
+                    <label for="pwd">{{'SignIn.Pass' | translate}}</label>
+                    <input type="password" class="form-control" id="pwd" required>
+                </div>
+                <div class="col-md-3 mb-3">
+                    <label for="firstname">{{'SignUp.FirstName' | translate}}</label>
+                    <input type="text" class="form-control" id="firstname" required>
+                </div>
+                <div class="col-md-3 mb-3">
+                    <label for="lastname">{{'SignUp.LastName' | translate}}</label>
+                    <input type="text" class="form-control" id="lastname" required>
+                </div>
+            </div>
+            <br>
+            <div class="form-row">
+                <div class="col-md-3 mb-3">
+                    <label for="sex">{{'SignUp.Sex' | translate}}</label>
+                    <div class="form-group">
+                        <select class="custom-select form-control" required id="sex">
+                            <option value=""></option>
+                            <option value="M">{{'SignUp.Gender.0.Male' | translate}}</option>
+                            <option value="F">{{'SignUp.Gender.1.Female' | translate}}</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="col-md-3 mb-3">
+                    <label for="schoollevel">{{'SignUp.SchoolLevel' | translate}}</label>
+                    <input type="text" class="form-control" id="schoollevel" required>
+                </div>
+                <div class="col-md-3 mb-3">
+                    <label for="birthdate">{{'SignUp.BirthDate' | translate}}</label>
+                    <input type="date" class="form-control" id="birthdate" required>
+                </div>
+                <div class="col-md-3 mb-3">
+                    <label for="phonenumber">{{'SignUp.Phone' | translate}}</label>
+                    <input type="tel" class="form-control" id="phonenumber" required>
+                </div>
+            </div>
+            <div class="container-fluid">
+                <div class="row" (mouseenter)="changeText=true" (mouseleave)="changeText=false">
+                    <!-- Card -->
+                    <div class="card mb-3 col-lg">
+
+                        <!--Card content-->
+                        <div class="card-body">
+
+                            <!--Title-->
+                            <h4 class="card-title">{{'SignUp.ClassLevel.0.BeginnerOne' | translate}}</h4>
+                            <!--Text-->
+                            <p class="card-text" *ngIf="changeText">
+                                {{'SignUp.LevelDetails.0.BeginnerOne' | translate}}
+                            </p>
+                        </div>
+                        <div class="card-footer bg-white">
+                            <button type="button" class="btn btn-primary btn-select">{{'SignUp.Select' | translate}}</button>
+                        </div>
+                    </div>
+                    <!--Card 2-->
+                    <div class="card mb-3 col-lg">
+                        <!--Card content-->
+                        <div class="card-body">
+                            <!--Title-->
+                            <h4 class="card-title">{{'SignUp.ClassLevel.1.BeginnerTwo' | translate}}</h4>
+                            <!--Text-->
+                            <p class="card-text" *ngIf="changeText">
+                                {{'SignUp.LevelDetails.1.BeginnerTwo' | translate}}
+                            </p>
+                        </div>
+                        <div class="card-footer bg-white">
+                            <button type="button" class="btn btn-select">{{'SignUp.Select' | translate}}</button>
+                        </div>
+                    </div>
+
+                    <!--Card 3-->
+                    <div class="card mb-3 col-lg">
+                        <!--Card content-->
+                        <div class="card-body">
+                            <!--Title-->
+                            <h4 class="card-title">{{'SignUp.ClassLevel.2.IntermediateOne' | translate}}</h4>
+                            <!--Text-->
+                            <p class="card-text" *ngIf="changeText">
+                                {{'SignUp.LevelDetails.2.IntermediateOne' | translate}}
+                            </p>
+                        </div>
+                        <div class="card-footer bg-white">
+                            <button type="button" class="btn btn-select">{{'SignUp.Select' | translate}}</button>
+                        </div>
+                    </div>
+                    <div class="card mb-3 col-lg">
+                        <!--Card content-->
+                        <div class="card-body">
+
+                            <!--Title-->
+                            <h4 class="card-title">{{'SignUp.ClassLevel.3.IntermediateTwo' | translate}}</h4>
+                            <!--Text-->
+                            <p class="card-text" *ngIf="changeText">
+                                {{'SignUp.LevelDetails.3.IntermediateTwo' | translate}}
+                            </p>
+                        </div>
+                        <div class="card-footer bg-white">
+                            <button type="button" class="btn btn-select">{{'SignUp.Select' | translate}}</button>
+                        </div>
+                    </div>
+
+                    <div class="card mb-3 col-lg-2 col-md-11" id="advanced">
+                        <!--Card content-->
+                        <div class="card-body">
+                            <!--Title-->
+                            <h4 class="card-title">{{'SignUp.ClassLevel.4.Advanced' | translate}}</h4>
+                            <!--Text-->
+                            <p class="card-text" *ngIf="changeText">
+                                {{'SignUp.LevelDetails.4.Advanced' | translate}}
+                            </p>
+                        </div>
+                        <div class="card-footer bg-white">
+                            <button type="button" class="btn btn-select">{{'SignUp.Select' | translate}}</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <br>
+            <button class="btn text-center" type="submit">{{'SignUp.Signup' | translate}}</button>
+        </form>
+    </div>
+</header>
