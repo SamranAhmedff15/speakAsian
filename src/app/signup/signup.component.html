@@ -1,22 +1,22 @@
 <header class="masthead">
     <div class="container">
-        <form class="form text-center">
+        <form [formGroup]="signUpForm" class="form text-center" (ngSubmit)="onSubmit()">
             <div class="form-row">
                 <div class="col-md-3 mb-3">
                     <label for="mail">{{'SignIn.Mail' | translate}}</label>
-                    <input type="mail" class="form-control" id="mail" required>
+                    <input type="mail" class="form-control" id="mail" formControlName="mail" required>
                 </div>
                 <div class="col-md-3 mb-3">
                     <label for="pwd">{{'SignIn.Pass' | translate}}</label>
-                    <input type="password" class="form-control" id="pwd" required>
+                    <input type="password" class="form-control" id="pwd" formControlName="password" required>
                 </div>
                 <div class="col-md-3 mb-3">
                     <label for="firstname">{{'SignUp.FirstName' | translate}}</label>
-                    <input type="text" class="form-control" id="firstname" required>
+                    <input type="text" class="form-control" id="firstname" formControlName="firstName" required>
                 </div>
                 <div class="col-md-3 mb-3">
                     <label for="lastname">{{'SignUp.LastName' | translate}}</label>
-                    <input type="text" class="form-control" id="lastname" required>
+                    <input type="text" class="form-control" id="lastname" formControlName="lastName" required>
                 </div>
             </div>
             <br>
@@ -24,7 +24,7 @@
                 <div class="col-md-3 mb-3">
                     <label for="sex">{{'SignUp.Sex' | translate}}</label>
                     <div class="form-group">
-                        <select class="custom-select form-control" required id="sex">
+                        <select class="custom-select form-control" formControlName="sex" required id="sex">
                             <option value=""></option>
                             <option value="M">{{'SignUp.Gender.0.Male' | translate}}</option>
                             <option value="F">{{'SignUp.Gender.1.Female' | translate}}</option>
@@ -33,15 +33,15 @@
                 </div>
                 <div class="col-md-3 mb-3">
                     <label for="schoollevel">{{'SignUp.SchoolLevel' | translate}}</label>
-                    <input type="text" class="form-control" id="schoollevel" required>
+                    <input type="text" class="form-control"formControlName="schoolLevel" id="schoollevel" required>
                 </div>
                 <div class="col-md-3 mb-3">
                     <label for="birthdate">{{'SignUp.BirthDate' | translate}}</label>
-                    <input type="date" class="form-control" id="birthdate" required>
+                    <input type="date" class="form-control" formControlName="birthDate" id="birthdate" required>
                 </div>
                 <div class="col-md-3 mb-3">
                     <label for="phonenumber">{{'SignUp.Phone' | translate}}</label>
-                    <input type="tel" class="form-control" id="phonenumber" required>
+                    <input type="tel" class="form-control" formControlName="phoneNumber" id="phonenumber" required>
                 </div>
             </div>
             <div class="container-fluid">
@@ -60,7 +60,7 @@
                             </p>
                         </div>
                         <div class="card-footer bg-white">
-                            <button type="button" class="btn btn-primary btn-select">{{'SignUp.Select' | translate}}</button>
+                            <button type="button" (click)="selectedLevel('beginnerOne')" class="btn btn-primary btn-select">{{'SignUp.Select' | translate}}</button>
                         </div>
                     </div>
                     <!--Card 2-->
@@ -75,7 +75,7 @@
                             </p>
                         </div>
                         <div class="card-footer bg-white">
-                            <button type="button" class="btn btn-select">{{'SignUp.Select' | translate}}</button>
+                            <button type="button" (click)="selectedLevel('beginnerTwo')" class="btn btn-select">{{'SignUp.Select' | translate}}</button>
                         </div>
                     </div>
 
@@ -91,7 +91,7 @@
                             </p>
                         </div>
                         <div class="card-footer bg-white">
-                            <button type="button" class="btn btn-select">{{'SignUp.Select' | translate}}</button>
+                            <button type="button" (click)="selectedLevel('intermediateOne')" class="btn btn-select">{{'SignUp.Select' | translate}}</button>
                         </div>
                     </div>
                     <div class="card mb-3 col-lg">
@@ -106,7 +106,7 @@
                             </p>
                         </div>
                         <div class="card-footer bg-white">
-                            <button type="button" class="btn btn-select">{{'SignUp.Select' | translate}}</button>
+                            <button type="button" (click)="selectedLevel('intermediateTwo')" class="btn btn-select">{{'SignUp.Select' | translate}}</button>
                         </div>
                     </div>
 
@@ -121,13 +121,14 @@
                             </p>
                         </div>
                         <div class="card-footer bg-white">
-                            <button type="button" class="btn btn-select">{{'SignUp.Select' | translate}}</button>
+                            <button type="button" (click)="selectedLevel('advanced')" class="btn btn-select">{{'SignUp.Select' | translate}}</button>
                         </div>
                     </div>
                 </div>
             </div>
             <br>
-            <button class="btn text-center" type="submit">{{'SignUp.Signup' | translate}}</button>
+            <button class="btn text-center" type="submit" [disabled]=”!signUpForm.valid”>{{'SignUp.Signup' | translate}}</button>
+            <button class="btn text-center" type="reset" (click)="revert()">Revert</button>
         </form>
     </div>
 </header>
