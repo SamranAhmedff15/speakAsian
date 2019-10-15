@@ -11,15 +11,20 @@ import { SenseiComponent } from './sensei/sensei.component';
 import { LandingPageComponent } from './landing-page/landing-page.component';
 import { TranslateModule, TranslateLoader } from '@ngx-translate/core';
 import { TranslateHttpLoader } from '@ngx-translate/http-loader';
-import { HttpClientModule, HttpClient } from '@angular/common/http';
+import { HttpClientModule, HttpClient, HTTP_INTERCEPTORS } from '@angular/common/http';
 import { AppComponent } from './app.component';
 import { SignupComponent } from './signup/signup.component';
 import { SigninComponent } from './signin/signin.component';
+import { BasicauthhttpinterceptorService } from './basicauthhttpinterceptor.service';
+import { AuthGuard } from './auth.guard';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { FlexLayoutModule } from '@angular/flex-layout';
+import { MaterialModule } from './material/material.module';
 
 
 
 export function HttpLoaderFactory(http: HttpClient) {
-  return new TranslateHttpLoader (http);
+  return new TranslateHttpLoader(http);
 }
 
 @NgModule({
@@ -39,17 +44,25 @@ export function HttpLoaderFactory(http: HttpClient) {
     ReactiveFormsModule,
     FontAwesomeModule,
     AngularFontAwesomeModule,
+    MaterialModule,
+    FlexLayoutModule,
     HttpClientModule,
     TranslateModule.forRoot({
-    loader: {
-      provide: TranslateLoader,
-      useFactory: HttpLoaderFactory,
-      deps: [HttpClient]
-    }
-    })
+      loader: {
+        provide: TranslateLoader,
+        useFactory: HttpLoaderFactory,
+        deps: [HttpClient]
+      }
+    }),
+    BrowserAnimationsModule
 
   ],
-  providers: [],
+  providers: [
+    {
+      provide: HTTP_INTERCEPTORS, useClass: BasicauthhttpinterceptorService, multi: true
+    },
+    AuthGuard
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

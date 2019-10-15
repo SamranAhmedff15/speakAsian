@@ -1,19 +1,19 @@
 <header class="masthead">
     <div class="container">
-        <form class="form text-center">
+        <form [formGroup]="signInForm" class="form text-center" (ngSubmit)="onSubmit()">
             <div class="form-row align-items-center">
                 <label for="email" class="col-sm-12 col-form-label">{{'SignIn.Mail' | translate}}</label>
-                <input type="email" class="form-control col-sm-4" id="email" required>
+                <input type="email" class="form-control col-sm-4" id="email" formControlName="mail">
             </div>
             <br>
             <div class="form-row align-items-center">
                 <label for="pwd" class="col-sm-12 col-form-label">{{'SignIn.Pass' | translate}}</label>
-                <input type="password" class="form-control col-sm-4" id="pwd" required>
+                <input type="password" class="form-control col-sm-4" id="pwd" formControlName="password">
             </div>
             <br>
             <div class="form-group row">
                 <div class="col-sm-12">
-                    <button type="submit" class="btn btn-lg">{{'SignIn.Signin' | translate}}</button>
+                    <button type="submit" class="btn btn-lg" [disabled]=!signInForm.valid>{{'SignIn.Signin' | translate}}</button>
                 </div>
             </div>
         </form>

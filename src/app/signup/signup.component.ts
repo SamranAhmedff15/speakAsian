@@ -2,25 +2,26 @@ import { Component, OnInit } from '@angular/core';
 import { FormGroup, FormControl, Validators } from '@angular/forms';
 import { SignupService } from '../signup.service';
 import { Student } from '../student';
+import { Router } from '@angular/router';
 @Component({
   selector: 'app-signup',
   templateUrl: './signup.component.html',
   styleUrls: ['./signup.component.scss']
 })
 export class SignupComponent implements OnInit {
-  constructor(private signupService: SignupService) {
+  constructor(private signupService: SignupService, private router: Router) {
     this.changeText = false;
   }
 
   student: Student = new Student();
-
+  resp: any;
   changeText: boolean;
 
   signUpForm = new FormGroup({
     firstName: new FormControl('', [Validators.required]),
     lastName: new FormControl('', [Validators.required]),
     mail: new FormControl('', [Validators.required, Validators.email]),
-    password: new FormControl('', [Validators.required]),
+    password: new FormControl('', [Validators.required, Validators.minLength(6)]),
     sex: new FormControl(''),
     phoneNumber: new FormControl('', [Validators.required]),
     birthDate: new FormControl('', [Validators.required]),
@@ -44,8 +45,13 @@ export class SignupComponent implements OnInit {
     this.student.schoolLevel = this.signUpForm.get('schoolLevel').value;
     this.student.sex = this.signUpForm.get('sex').value;
 
-    console.log(this.student.id);
-    this.signupService.signupStudent(this.student).subscribe();
+    this.signupService.signupStudent(this.student).subscribe(
+      data => {
+        this.router.navigate(['Signin']);
+      },
+      error => {
+      }
+    );
   }
 
   ngOnInit() {

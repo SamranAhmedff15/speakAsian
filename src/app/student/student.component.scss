@@ -1,0 +1,129 @@
+$white: #fff !default;
+$gray-100: #f8f9fa !default;
+$gray-200: #e9ecef !default;
+$gray-300: #dee2e6 !default;
+$gray-400: #ced4da !default;
+$gray-500: #adb5bd !default;
+$gray-600: #868e96 !default;
+$gray-700: #495057 !default;
+$gray-800: #343a40 !default;
+$gray-900: #212529 !default;
+$black: #000 !default;
+
+$blue: #007bff !default;
+$indigo: #6610f2 !default;
+$purple: #6f42c1 !default;
+$pink: #e83e8c !default;
+$red: #dc3545 !default;
+$orange: #fd7e14 !default;
+$yellow: #ffc107 !default;
+$green: #28a745 !default;
+$teal: #20c997 !default;
+$cyan: #17a2b8 !default;
+$jpred: #bc002d !default;
+
+$primary: $blue !default;
+$secondary: $gray-600 !default;
+$success: $green !default;
+$info: $cyan !default;
+$warning: $yellow !default;
+$danger: $red !default;
+$light: $gray-100 !default;
+$dark: $gray-800 !default;
+
+footer.footer {
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: 400;
+  color: #000;
+}
+
+.icon-class {
+  color: $jpred;
+  &:hover {
+    cursor: pointer;
+  }
+}
+#logout {
+  position: right;
+  float: right;
+}
+.social {
+  font-size: 2em;
+}
+.mat-toolbar {
+  background: $gray-100;
+  color: $jpred;
+  height: 15vh;
+}
+div {
+  overflow: inherit;
+}
+mat-toolbar-row {
+  text-align: center;
+  button {
+    font-size: 18px;
+    font-weight: 400;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  }
+}
+.mat-sidenav-container {
+  height: 93vh !important;
+  background-color: $white;
+}
+mat-sidenav,
+mat-sidenav-content {
+  padding: 16px;
+  background-color: $white;
+  color: $jpred;
+  font-size: 19px;
+  height: 100%;
+}
+mat-sidenav {
+  width: 200px;
+  height: 1800px;
+}
+mat-nav-list {
+  color: $jpred;
+}
+
+mat-icon {
+  font-size: 1.5em;
+  &:hover {
+    cursor: pointer;
+  }
+}
+mat-toolbar {
+  margin-top: 1em;
+  background-color: $white;
+  color: $jpred;
+  justify-content: center;
+}
+
+.example-spacer {
+  flex: 1 1 auto;
+}
+.body {
+  background-color: $white;
+}
+
+.mat-sidenav-content {
+  text-align: center;
+}
+button {
+  &:hover {
+    background-color: $gray-100;
+  }
+}
+
+span {
+ 
+}

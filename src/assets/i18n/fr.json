@@ -93,6 +93,7 @@
         "Select": "Choisir",
         "BirthDate": "Date de naissance",
         "Phone": "Phone number",
-        "SchoolLevel": "Niveau scolaire"
+        "SchoolLevel": "Niveau scolaire",
+        "Revert": "annuler"
     }
 }

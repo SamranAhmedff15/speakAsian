@@ -1,1 +1,96 @@
-<p>student works!</p>
+<div class="body">
+    <div>
+        <mat-toolbar>
+            <mat-toolbar-row>
+                <div fxShow="true" fxHide.gt-sm="true">
+                    <button mat-icon-button>
+                        <mat-icon (click)="sidenav.toggle()">
+                            menu
+                        </mat-icon>
+                    </button>
+                </div>
+                <button mat-button routerLink="/">
+                    <span>
+                        <h1>Speak Asian</h1>
+                    </span>
+                </button>
+                <span class="example-spacer"></span>
+                <div fxShow="true" fxHide.lt-md="true" class="toolbarnav">
+                    <button mat-button routerLink="/"> Profile </button>
+                    <button mat-button routerLink="/"> Practice </button>
+                    <button mat-button routerLink="/"> Resources </button>
+                    <button mat-button routerLink="/" id="logout"> Log out </button>
+                </div>
+
+            </mat-toolbar-row>
+        </mat-toolbar>
+        <mat-sidenav-container fxFlexFill class="example-container">
+            <mat-sidenav [autoFocus]="false" fxLayout="column" mode="over" opened="false" fxHide.gt-sm="true" #sidenav>
+                <div fxLayout="column">
+                    <button mat-button routerLink="/">
+                        <mat-icon>home</mat-icon>
+                        <span>Home</span>
+                    </button>
+                    <mat-divider></mat-divider>
+
+                    <button mat-button routerLink="/">
+                        <mat-icon>face</mat-icon>
+                        <span>Profile</span>
+                    </button>
+                    <button mat-button routerLink="/">
+                        <mat-divider></mat-divider>
+                        <mat-icon>create</mat-icon>
+                        <span>Practice</span>
+                    </button>
+                    <mat-divider></mat-divider>
+
+                    <button mat-button routerLink="/">
+                        <mat-icon>link</mat-icon>
+                        <span>Resources</span>
+                    </button>
+
+                    <mat-divider></mat-divider>
+                    <button mat-button (click)="sidenav.toggle()" routerLink="/">
+                        <mat-icon>exit_to_app</mat-icon>
+                        <span>Log out</span>
+                    </button>
+                </div>
+            </mat-sidenav>
+            <mat-sidenav-content fxFlexFill>
+                <div>
+                    
+                </div>
+            </mat-sidenav-content>
+        </mat-sidenav-container>
+    </div>
+    <footer class="footer bg-light">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 h-100 text-center text-lg-left my-auto">
+                    <h5 class="text-muted mb-4 mb-lg-0">&copy; Speak Asian 2019. {{'Footer.CopyRights' | translate}}
+                    </h5>
+                </div>
+                <div class="col-lg-6 h-100 text-center text-lg-right my-auto">
+                    <ul class="list-inline mb-0">
+                        <li class="list-inline-item mr-3">
+                            <a href="https://www.facebook.com/speakasianlc/">
+                                <fa name="facebook" class="social icon-class"></fa>
+                            </a>
+                        </li>
+                        <li class="list-inline-item mr-3">
+                            <a href="https://twitter.com/asia_speak">
+                                <fa name="twitter" class="social icon-class"></fa>
+                            </a>
+                        </li>
+                        <li class="list-inline-item">
+                            <a href="https://www.instagram.com/speak_asian/?igshid=1pd3d2qgkcmx">
+                                <fa name="instagram" class="social icon-class"></fa>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+</div>

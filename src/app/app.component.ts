@@ -7,7 +7,7 @@ import { Router, NavigationStart } from '@angular/router';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  showMenu;
+  showMenu: boolean;
   constructor(public translate: TranslateService, public router: Router) {
     translate.addLangs(['en', 'fr']);
     translate.setDefaultLang('fr');
@@ -15,9 +15,17 @@ export class AppComponent {
     translate.use(browserLang.match(/en|fr/) ? browserLang : 'fr');
 
     router.events.forEach((event) => {
+      let currentRoute;
       if (event instanceof NavigationStart) {
-          this.showMenu = event.url !== '/';
+        if (event.url === '/Signin') {
+          currentRoute = true;
+        } else if (event.url === '/Signup') {
+          currentRoute = true;
+        } else {
+          currentRoute = false;
+        }
+        this.showMenu = currentRoute;
       }
     });
-   }
+  }
 }

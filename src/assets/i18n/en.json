@@ -7,7 +7,8 @@
         "Languages": "Languages"
     },
     "Masthead": {
-        "Journey": "Join us to learn japanese. Your journey starts here"
+        "Journey": "Join us to learn japanese. Your journey starts here",
+        "Welcome": "Welcome to Speak Asian"
     },
     "Titles": {
         "Teachers": "Skilled teachers",
@@ -93,6 +94,7 @@
         ],
         "BirthDate": "Birth Date",
         "Phone": "Phone number",
-        "SchoolLevel": "School level"
+        "SchoolLevel": "School level",
+        "Revert": "cancel"
     }
 }
